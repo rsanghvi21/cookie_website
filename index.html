@@ -4,57 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cookies 4 U</title>
-  <style>
-    :root { --bg:#ffffff; --text:#222; --accent:#c26; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: "Comic Sans MS", Papyrus, cursive; color: var(--text); background: var(--bg); line-height: 1.5; }
-    header { border-bottom: 1px solid #eee; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
-    nav ul { list-style: none; padding: 0; margin: 8px 0 0; display: flex; gap: 12px; flex-wrap: wrap; }
-    nav a { text-decoration: none; color: var(--accent); }
-
-    .hero { padding: 32px 0; text-align: center; }
-
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-
-    .card { border: 1px solid #eee; border-radius: 8px; padding: 12px; }
-
-    table { width: 100%; border-collapse: collapse; }
-    th, td { border:1px solid #ddd; padding: 8px; text-align: left; }
-
-    .btn { display: inline-block; padding: 8px 12px; background: var(--accent); color: #fff; border-radius: 6px; text-decoration: none; border: 0; cursor: pointer; }
-
-    img { max-width: 100%; height: auto; display: block; }
-
-    form input, form button { font: inherit; }
-    form input[type="email"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; }
-    form .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-
-    .visually-hidden { position: absolute; left: -9999px; }
-  </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Cookies 4 U 🍪</h1>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#hours">Hours</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Cookies 4 U 🍪</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
+  <main>
+    <section id="hero">
       <h2>Fresh, simple cookies made daily</h2>
       <p>Small-batch classics with real ingredients.</p>
-      <a class="btn" href="#contact">Order inquiry</a>
+      <p><a href="#contact">Order inquiry</a></p>
     </section>
 
-    <section id="menu" class="card">
+    <section id="menu">
       <h3>Menu</h3>
       <table>
         <thead>
@@ -68,47 +38,41 @@
       </table>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h3>Why choose us</h3>
-        <ul>
-          <li>Made fresh daily</li>
-          <li>Simple ingredients</li>
-          <li>Family recipe</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Testimonials</h3>
-        <blockquote>“Best cookies on the block.” — A Neighbor</blockquote>
-        <blockquote>“I ate seven.” — Anonymous</blockquote>
-      </div>
+    <section id="about">
+      <h3>Why choose us</h3>
+      <ul>
+        <li>Made fresh daily</li>
+        <li>Simple ingredients</li>
+        <li>Family recipe</li>
+      </ul>
+
+      <h3>Testimonials</h3>
+      <blockquote>“Best cookies on the block.” — A Neighbor</blockquote>
+      <blockquote>“I ate seven.” — Anonymous</blockquote>
     </section>
 
-    <section id="hours" class="card">
+    <section id="hours">
       <h3>Hours & Location</h3>
       <p>Mon–Sun: 11:00 AM – 7:00 PM</p>
-      <p>67 West Oakland Avenue, Columbus, OH 43201</p>
+      <p>1234 Cookie Ave, Sweet City</p>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact">
       <h3>Contact Us</h3>
-      <p>📞 Call us at <strong>(440)3349257</strong></p>
+      <p>📞 Call us at <strong>(555) 123-COOKIE</strong></p>
       <p>📧 Email us at <a href="mailto:rahulksanghvi21@gmail.com">rahulksanghvi21@gmail.com</a></p>
+
       <h3>Newsletter Signup</h3>
       <form action="/subscribe" method="post">
-        <div class="row">
-          <label for="email" class="visually-hidden">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-          <button class="btn" type="submit">Join</button>
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Join</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      <small>© 2025 Cookies 4 U. All rights reserved.</small>
-    </div>
+    <small>© 2025 Cookies 4 U. All rights reserved.</small>
   </footer>
 </body>
 </html>
